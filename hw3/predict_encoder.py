@@ -22,6 +22,6 @@ dnn = load_model(model_name + '-dnn')
 tX = np.asarray(tX).astype('float32') / 255
 tX_feature = encoder.predict(tX)
 
-ans = dnn.predict_classes(tX_feature)
+ans = dnn.predict_classes(tX_feature.reshape(tX_feature.shape[0], 256))
 write_submit_file(ans, output_name)
 print()
