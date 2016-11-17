@@ -8,7 +8,7 @@ from keras.callbacks import ModelCheckpoint
 from keras.utils import np_utils
 from keras import backend as K
 
-K.set_dim_ordering('th')
+K.set_image_dim_ordering('th')
 
 import pickle
 import numpy as np
