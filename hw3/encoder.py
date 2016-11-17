@@ -4,6 +4,9 @@ from keras.optimizers import Adam
 from keras.regularizers import l2
 from keras.layers.normalization import BatchNormalization
 from keras.utils import np_utils
+from keras import backend as K
+
+K.set_image_dim_ordering('th')
 
 import numpy as np
 import os

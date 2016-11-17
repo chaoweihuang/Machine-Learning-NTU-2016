@@ -3,7 +3,7 @@ from keras.models import Model
 from keras.optimizers import Adam
 from keras import backend as K
 
-K.set_dim_ordering('th')
+K.set_image_dim_ordering('th')
 
 import numpy as np
 import os
