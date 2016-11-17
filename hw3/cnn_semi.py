@@ -33,7 +33,7 @@ img_channels = 3
 np.random.seed(5487)
 
 X, y = get_data(os.path.join(data_dir, 'all_label.p'))
-X_unlabel = get_unlabel_data(os.path.join('all_unlabel.p'))
+X_unlabel = get_unlabel_data(os.path.join(data_dir, 'all_unlabel.p'))
 
 idx = np.random.permutation(X.shape[0])
 X_train = X[idx[:4000]]
